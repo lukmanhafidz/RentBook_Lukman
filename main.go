@@ -60,7 +60,7 @@ func main() {
 				if res.Status == 1 {
 					Login = 1
 					ID_User = res.ID_User
-					fmt.Println(ID_User)
+
 				}
 
 			} else if Login == 1 {
@@ -83,7 +83,7 @@ func main() {
 
 		case 5:
 			if Login == 1 {
-				DeleteBook()
+				views.UpdateProfile(AksesUsers, ID_User)
 			}
 
 		case 99:
