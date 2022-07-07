@@ -39,6 +39,7 @@ func main() {
 			fmt.Println("7. Return Books")
 			fmt.Println("8. My Books")
 			fmt.Println("9. Get User Profile")
+			fmt.Println("12. Available Books")
 		}
 
 		fmt.Println("99. Exit")
@@ -98,6 +99,8 @@ func main() {
 			//Get user profile
 			views.UserProfile(AksesUsers)
 
+		case 12:
+			views.AvailableBooks(AksesBooks)
 		case 99:
 			//Exit
 			fmt.Println("Terima kasih telah menggunakan program kami")
